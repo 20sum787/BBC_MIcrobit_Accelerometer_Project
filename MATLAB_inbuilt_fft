@@ -10,7 +10,7 @@ Z = fft(recorded_data(:,4));
 n_array = size(recorded_data(:,1));
 n = n_array(:,1);
 Fs = 50;
-
+% The formula for frequency used was inspired by examples from MATLAB documentation
 plot(Fs/n*(0:n-1),abs(Z),"LineWidth",1.5)
 title("Complex FFT Magnitudes")
 xlabel("f(Hz)")
