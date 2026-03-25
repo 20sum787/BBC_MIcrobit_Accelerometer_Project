@@ -29,6 +29,7 @@ function freq_domain = dft(X,column_no)
         Y_k = 0;
 
         for n = (0:len-1)
+        % the mathematical formula used was sourced from wikipedia, with the MATLAB code written by myself
         
         summation_argument = y(n+1)*exp(-2*pi*1j*(k+1)*n/len);
         Y_k = Y_k + summation_argument;
